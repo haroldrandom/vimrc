@@ -96,7 +96,7 @@ set nu
 set ruler
 
 " Height of the command bar
-set cmdheight=2
+set cmdheight=1
 
 " A buffer becomes hidden when it is abandoned
 set hid
@@ -288,6 +288,7 @@ set laststatus=2
 
 " Format the status line
 "set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+set linespace=0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
