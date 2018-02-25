@@ -75,3 +75,19 @@ endif
 " => Twig section
 """"""""""""""""""""""""""""""
 autocmd BufRead *.twig set syntax=html filetype=html
+
+
+""""""""""""""""""""""""""""""
+" => Ruby
+""""""""""""""""""""""""""""""
+au FileType ruby set shiftwidth=2  
+au FileType ruby set tabstop=2
+au FileType ruby set softtabstop=2
+
+""""""""""""""""""""""""""""""
+" => YAM:q
+"
+""""""""""""""""""""""""""""""
+au FileType yaml set shiftwidth=2  
+au FileType yaml set tabstop=2
+au FileType yaml set softtabstop=2
