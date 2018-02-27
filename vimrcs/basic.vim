@@ -272,7 +272,7 @@ endtry
 
 " mouse support
 if has("mouse")
-    set mouse=v
+    set mouse=a
 endif
 
 
