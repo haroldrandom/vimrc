@@ -28,9 +28,12 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
-set background=dark
+"set background=dark
 "colorscheme peaksea
-colorscheme solarized
+"colorscheme solarized
+"colorscheme mayansmoke
+"colorscheme pyte
+colorscheme molokai
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
