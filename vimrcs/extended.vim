@@ -33,7 +33,8 @@ set guioptions-=L
 "colorscheme solarized
 "colorscheme mayansmoke
 "colorscheme pyte
-colorscheme molokai
+"colorscheme molokai
+colorscheme space-vim-dark
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

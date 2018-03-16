@@ -10,3 +10,6 @@
 [submodule "my_plugins/molokai"]
 	path = my_plugins/molokai
 	url = https://github.com/tomasr/molokai.git
+[submodule "my_plugins/space-vim-dark"]
+	path = my_plugins/space-vim-dark
+	url = https://github.com/liuchengxu/space-vim-dark.git
