@@ -36,6 +36,11 @@ set guioptions-=L
 "colorscheme molokai
 colorscheme space-vim-dark
 
+" vim transparency settings
+hi Normal     ctermbg=NONE guibg=NONE
+hi LineNr     ctermbg=NONE guibg=NONE
+hi SignColumn ctermbg=NONE guibg=NONE
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
