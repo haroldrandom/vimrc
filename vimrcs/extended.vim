@@ -27,6 +27,14 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 
+" Transparency background settings
+augroup SetBackgroupTransparency
+    autocmd!
+    autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE
+    autocmd ColorScheme * hi LineNr ctermbg=NONE guibg=NONE
+    autocmd ColorScheme * hi SignColumn ctermbg=NONE guibg=NONE
+augroup END
+
 " Colorscheme
 "set background=dark
 "colorscheme peaksea
@@ -35,11 +43,6 @@ set guioptions-=L
 "colorscheme pyte
 "colorscheme molokai
 colorscheme space-vim-dark
-
-" vim transparency settings
-hi Normal     ctermbg=NONE guibg=NONE
-hi LineNr     ctermbg=NONE guibg=NONE
-hi SignColumn ctermbg=NONE guibg=NONE
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
