@@ -16,3 +16,6 @@
 [submodule "my_plugins/vim-commentary"]
 	path = my_plugins/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "my_plugins/nerdtree"]
+	path = my_plugins/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
