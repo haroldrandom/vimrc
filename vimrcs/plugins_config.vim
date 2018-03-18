@@ -105,40 +105,6 @@ let g:multi_cursor_next_key="\<C-s>"
 vmap Si S(i_<esc>f)
 au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 
-" keep lightline for later update
-" but disable tabline for vim-airline settings 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => lightline
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:lightline = {
-      \ 'colorscheme': 'powerline',
-      \ 'enable' : {
-      \   'tabline': 0
-      \    }
-      \ }
-"let g:lightline = {
-"      \ 'colorscheme': 'powerline',
-"      \ 'active': {
-"      \   'left': [ ['mode', 'paste'],
-"      \             ['fugitive', 'readonly', 'filename', 'modified'] ],
-"      \   'right': [ [ 'lineinfo' ], ['percent'] ]
-"      \ },
-"      \ 'component': {
-"      \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
-"      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-"      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
-"      \ },
-"      \ 'component_visible_condition': {
-"      \   'readonly': '(&filetype!="help"&& &readonly)',
-"      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-"      \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
-"      \ },
-"      \ 'separator': { 'left': ' ', 'right': ' ' },
-"      \ 'subseparator': { 'left': ' ', 'right': ' ' },
-"      \ 'enable' : {
-"      \ }
-"      \ }
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-airline
@@ -158,7 +124,7 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_section_c = '%F'  " full path
-"let g:airline#extensions#tabline#fnamemod = ':p:.'
+let g:airline#extensions#tabline#fnamemod = ':p:.'
 "let g:airline#extensions#tabline#fnamecollapse = 1
 let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#tab_nr_type = 1 
@@ -177,8 +143,6 @@ nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 nmap <leader>- <Plug>AirlineSelectPrevTab
 nmap <leader>+ <Plug>AirlineSelectNextTab
-
-
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
