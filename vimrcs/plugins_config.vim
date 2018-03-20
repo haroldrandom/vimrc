@@ -132,6 +132,7 @@ let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#show_close_button = 0
 "let g:airline#extensions#tabline#tabs_label = 't'
 "let g:airline#extensions#tabline#buffers_label = 't'
+let g:airline#extensions#tabline#buffer_min_count =2
 let g:airline#extensions#tabline#buffer_idx_mode = 1    " hotkey to switch tabs
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
