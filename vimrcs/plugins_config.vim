@@ -171,8 +171,8 @@ let g:go_highlight_build_constraints = 1
 " => Syntastic (syntax checker)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Python
-"let g:syntastic_python_checkers=['pyflakes']
-"
+let g:syntastic_python_checkers=['pyflakes']
+
 "" Javascript
 "let g:syntastic_javascript_checkers = ['jshint']
 "
