@@ -25,3 +25,9 @@
 [submodule "my_plugins/vim-autoformat"]
 	path = my_plugins/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
+[submodule "my_plugins/indentLine"]
+	path = my_plugins/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "my_plugins/vim-indent-guides"]
+	path = my_plugins/vim-indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
