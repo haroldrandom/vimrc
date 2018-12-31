@@ -21,7 +21,7 @@ au FileType python map <buffer> F :set foldmethod=indent<cr>
 au FileType python set cinkeys-=0#
 au FileType python set indentkeys-=0#
 
-au BufWritePost *.py call Flake8()
+" au BufWritePost *.py call Flake8()
 
 
 """"""""""""""""""""""""""""""
