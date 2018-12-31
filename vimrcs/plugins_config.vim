@@ -206,3 +206,9 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap <F3> :Autoformat<CR>
 let g:vim_markdown_folding_disabled = 1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-indent-guide
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap <F4> :IndentGuidesToggle<CR>
