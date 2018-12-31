@@ -212,3 +212,4 @@ let g:vim_markdown_folding_disabled = 1
 " => vim-indent-guide
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap <F4> :IndentGuidesToggle<CR>
+let g:indent_guides_tab_guides = 0
