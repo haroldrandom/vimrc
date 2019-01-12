@@ -91,6 +91,7 @@ map <C-n> :NERDTreeToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <C-m> :TagbarToggle<CR>
 let g:tagbar_autofocus = 0
+let g:tagbar_sort = 0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
