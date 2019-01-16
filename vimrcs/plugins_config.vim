@@ -177,6 +177,7 @@ let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
 
 "" Python
 let g:syntastic_python_checkers=['flake8', 'pyflakes']
+let g:syntastic_python_flake8_args='--ignore=E501'
 
 "" Javascript
 "let g:syntastic_javascript_checkers = ['jshint']
