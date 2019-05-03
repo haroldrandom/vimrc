@@ -37,3 +37,6 @@
 [submodule "my_plugins/vim-cpp-enhanced-highlight"]
 	path = my_plugins/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "my_plugins/coc.nvim"]
+	path = my_plugins/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
