@@ -37,12 +37,10 @@ augroup END
 
 " Colorscheme
 "set background=dark
-"colorscheme peaksea
 "colorscheme solarized
-"colorscheme mayansmoke
 "colorscheme pyte
-"colorscheme molokai
-colorscheme space-vim-dark
+" colorscheme space-vim-dark
+colorscheme onedark
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
