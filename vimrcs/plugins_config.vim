@@ -24,12 +24,6 @@ let g:bufExplorerSortBy='name'
 map <leader>o :BufExplorer<cr>
 
 
-""""""""""""""""""""""""""""""
-" => MRU plugin
-""""""""""""""""""""""""""""""
-let MRU_Max_Entries = 400
-map <leader>f :MRU<CR>
-
 
 """"""""""""""""""""""""""""""
 " => YankStack
@@ -44,12 +38,10 @@ nmap <c-n> <Plug>yankstack_substitute_newer_paste
 " => CTRL-P
 """"""""""""""""""""""""""""""
 let g:ctrlp_working_path_mode = 0
-
 let g:ctrlp_map = '<c-p>'
-map <leader>j :CtrlP<cr>
-map <c-b> :CtrlPBuffer<cr>
-
-let g:ctrlp_max_height = 20
+nnoremap <c-b> :CtrlPBuffer<cr>
+" nnoremap <c-m> :CtrlPMRU<cr>
+let g:ctrlp_max_height = 25
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 
 
@@ -119,11 +111,12 @@ let g:airline_theme='jellybeans'
 "let g:airline_theme='base16_grayscale'
 "let g:airline_theme='raven'
 "let g:airline_theme='tomorrow'
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 let g:airline#extensions#tabline#show_buffers = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_section_c = '%F'  " full path
 let g:airline#extensions#tabline#fnamemod = ':p:.'
@@ -131,9 +124,9 @@ let g:airline#extensions#tabline#fnamemod = ':p:.'
 let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#tab_nr_type = 1 
 let g:airline#extensions#tabline#show_close_button = 0
-"let g:airline#extensions#tabline#tabs_label = 't'
-"let g:airline#extensions#tabline#buffers_label = 't'
-let g:airline#extensions#tabline#buffer_min_count =2
+" let g:airline#extensions#tabline#tabs_label = 't'
+" let g:airline#extensions#tabline#buffers_label = 't'
+let g:airline#extensions#tabline#buffer_min_count = 2
 let g:airline#extensions#tabline#buffer_idx_mode = 1    " hotkey to switch tabs
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2

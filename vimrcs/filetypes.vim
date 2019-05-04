@@ -89,7 +89,6 @@ au FileType ruby set softtabstop=2
 
 """"""""""""""""""""""""""""""
 " => YAML
-"
 """"""""""""""""""""""""""""""
 au FileType yaml set shiftwidth=2  
 au FileType yaml set tabstop=2
@@ -98,7 +97,6 @@ au FileType yaml set softtabstop=2
 
 """"""""""""""""""""""""""""""
 " => C++ Section
-"
 """"""""""""""""""""""""""""""
 " au FileType cpp set shiftwidth=2
 " au FileType cpp set tabstop=2
