@@ -272,9 +272,9 @@ endtry
 
 
 " mouse support
-if has("mouse")
-   set mouse=a
-endif
+" if has("mouse")
+"    set mouse=a
+" endif
 
 
 " Return to last edit position when opening files (You want this!)
