@@ -1,0 +1,3 @@
+set nofoldenable
+
+set termguicolors

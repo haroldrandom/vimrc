@@ -36,9 +36,8 @@ augroup SetBackgroupTransparency
 augroup END
 
 " Colorscheme
-"set background=dark
+set background=dark
 "colorscheme solarized
-"colorscheme pyte
 " colorscheme space-vim-dark
 colorscheme onedark
 
@@ -48,30 +47,6 @@ colorscheme onedark
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " map <leader>e :e! ~/.vim_runtime/my_configs.vim<cr>
 " autocmd! bufwritepost ~/.vim_runtime/my_configs.vim source ~/.vim_runtime/my_configs.vim
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Turn persistent undo on 
-"    means that you can undo even when you close a buffer/VIM
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set undofile
-if !has('nvim')
-    try
-        set undodir=~/.vim_runtime/temp_dirs/undodir
-    catch
-    endtry
-endif
-
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Embedded terminal settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-try
-    " Esc back to normal mode
-    tnoremap <Esc> <C-\><C-n>
-catch
-endtry
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

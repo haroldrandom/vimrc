@@ -4,11 +4,84 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+let s:vim_runtime = expand('<sfile>:p:h')."/.."
+
+""""""""""""""""""""""""""""""
+" New Plugin Manager
+""""""""""""""""""""""""""""""
+if has('nvim')
+    call plug#begin('~/.local/share/nvim/plugged')
+else
+    call plug#begin(s:vim_runtime.'/plugged')
+endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-startify
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'mhinz/vim-startify'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => coc
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-commentary
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'tpope/vim-commentary'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-go
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'fatih/vim-go'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NERDTree
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-airline
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => tagbar
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'majutsushi/tagbar'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => themes
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'joshdick/onedark.vim'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-autoformat
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'Chiel92/vim-autoformat'
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => c++ highlight
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'octol/vim-cpp-enhanced-highlight'
+
+Plug 'nathanaelkane/vim-indent-guides'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Fuzzy file, buffer, mru, tag, etc finder.
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'kien/ctrlp.vim'
+
+
+call plug#end()
+
+
 
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
-let s:vim_runtime = expand('<sfile>:p:h')."/.."
 call pathogen#infect(s:vim_runtime.'/sources_forked/{}')
 call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
 call pathogen#infect(s:vim_runtime.'/my_plugins/{}')

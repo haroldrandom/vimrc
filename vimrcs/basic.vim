@@ -351,6 +351,29 @@ map <leader>pp :setlocal paste!<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Turn persistent undo on
+"    means that you can undo even when you close a buffer/VIM
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set undofile
+if !has('nvim')
+    try
+        set undodir=~/.vim_runtime/temp_dirs/undodir
+    catch
+    endtry
+endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Embedded terminal settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+try
+    " Esc back to normal mode
+    tnoremap <Esc> <C-\><C-n>
+catch
+endtry
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
