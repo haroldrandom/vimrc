@@ -23,7 +23,7 @@ Plug 'mhinz/vim-startify'
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " => coc
 """"""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+" Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-commentary
@@ -235,7 +235,7 @@ let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
 
 "" Python
-let g:syntastic_python_checkers=['pylint']
+" let g:syntastic_python_checkers=['pylint']
 
 "" Javascript
 "let g:syntastic_javascript_checkers = ['jshint']
@@ -294,19 +294,19 @@ let g:cpp_no_function_highlight = 1
 " Code and snippets autocompletion config
 " Idea comes from https://github.com/taigacute/ThinkVim.git
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:coc_snippet_next = '<Tab>'
-let g:coc_snippet_prev = '<S-Tab>'
+" let g:coc_snippet_next = '<Tab>'
+" let g:coc_snippet_prev = '<S-Tab>'
 
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+" inoremap <silent><expr> <TAB>
+"       \ pumvisible() ? "\<C-n>" :
+"       \ <SID>check_back_space() ? "\<TAB>" :
+"       \ coc#refresh()
 
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-"inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+" inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+" "inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
+" function! s:check_back_space() abort
+"   let col = col('.') - 1
+"   return !col || getline('.')[col - 1]  =~# '\s'
+" endfunction
