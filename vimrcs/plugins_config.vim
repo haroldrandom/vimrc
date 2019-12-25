@@ -235,7 +235,7 @@ let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
 
 "" Python
-" let g:syntastic_python_checkers=['pylint']
+let g:syntastic_python_checkers=[]
 
 "" Javascript
 "let g:syntastic_javascript_checkers = ['jshint']
